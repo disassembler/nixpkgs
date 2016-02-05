@@ -4,7 +4,7 @@ let
   version = "HEAD";
 
 in antBuild rec {
-  name = "mitro-core-${version}";
+  name = "passopolis-${version}";
 
   buildInputs = [ git python unzip ];
   src = fetchurl {
