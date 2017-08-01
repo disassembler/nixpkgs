@@ -2,7 +2,7 @@
 
 buildGoPackage rec {
   name = "kapacitor-${version}";
-  version = "1.0.0";
+  version = "1.3.1";
 
   goPackagePath = "github.com/influxdata/kapacitor";
 
@@ -17,7 +17,7 @@ buildGoPackage rec {
     description = "Open source framework for processing, monitoring, and alerting on time series data";
     license = licenses.mit;
     homepage = https://influxdata.com/time-series-platform/kapacitor/;
-    maintainers = with maintainers; [offline];
+    maintainers = with maintainers; [offline disassembler];
     platforms = with platforms; linux;
   };
 }
