@@ -952,6 +952,8 @@ with pkgs;
 
   devmem2 = callPackage ../os-specific/linux/devmem2 { };
 
+  ding_libs = callPackage ../os-specific/linux/ding-libs { };
+
   dbus-broker = callPackage ../os-specific/linux/dbus-broker {};
 
   ioport = callPackage ../os-specific/linux/ioport {};
@@ -11338,6 +11340,10 @@ with pkgs;
 
   "389-ds-base" = callPackage ../servers/ldap/389 {
     kerberos = libkrb5;
+  };
+
+  freeipa = callPackage ../servers/ldap/freeipa {
+    sasl = cyrus_sasl;
   };
 
   rdf4store = callPackage ../servers/http/4store { };
