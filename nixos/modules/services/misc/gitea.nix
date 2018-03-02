@@ -16,6 +16,7 @@ let
     USER = ${cfg.database.user}
     PASSWD = #dbpass#
     PATH = ${cfg.database.path}
+    SSL_MODE = ${cfg.database.sslMode}
 
     [repository]
     ROOT = ${cfg.repositoryRoot}
@@ -34,6 +35,9 @@ let
     [security]
     SECRET_KEY = #secretkey#
     INSTALL_LOCK = true
+
+    [log]
+    ROOT_PATH = ${cfg.stateDir}/log
 
     ${cfg.extraConfig}
   '';
@@ -122,6 +126,11 @@ in
           type = types.str;
           default = "${cfg.stateDir}/data/gitea.db";
           description = "Path to the sqlite3 database file.";
+        };
+        sslMode = mkOption {
+          type = types.str;
+          default = "require";
+          description = "SSL Mode for postgres";
         };
       };
 
@@ -239,6 +248,7 @@ in
         WorkingDirectory = cfg.stateDir;
         ExecStart = "${pkgs.gitea.bin}/bin/gitea web";
         Restart = "always";
+        PermissionsStartOnly = true;
       };
 
       environment = {
