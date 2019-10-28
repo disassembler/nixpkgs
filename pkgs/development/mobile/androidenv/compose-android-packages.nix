@@ -1,10 +1,10 @@
 {requireFile, autoPatchelfHook, pkgs, pkgs_i686, licenseAccepted ? false}:
 
-{ toolsVersion ? "25.2.5"
-, platformToolsVersion ? "28.0.1"
-, buildToolsVersions ? [ "28.0.3" ]
+{ toolsVersion ? "29.0.4"
+, platformToolsVersion ? "29.0.4"
+, buildToolsVersions ? [ "29.0.4" ]
 , includeEmulator ? false
-, emulatorVersion ? "28.0.14"
+, emulatorVersion ? "29.0.4"
 , platformVersions ? []
 , includeSources ? false
 , includeDocs ? false

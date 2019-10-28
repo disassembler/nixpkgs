@@ -51,14 +51,14 @@
 
     "28".android-wear."x86" = {
       name = "system-image-28-android-wear-x86";
-      path = "system-images/android-P/android-wear-cn/x86";
+      path = "system-images/android-28/android-wear-cn/x86";
       revision = "28-android-wear-x86";
       displayName = "China version of Wear OS Intel x86 Atom System Image";
       archives.all = fetchurl {
       
         url = 
-        https://dl.google.com/android/repository/sys-img/android-wear-cn/x86-P_r02.zip;
-        sha1 = "a61a2e453a11f77ab15b3e0bf1e017e0bb9d1bcc";
+        https://dl.google.com/android/repository/sys-img/android-wear-cn/x86-28_r03.zip;
+        sha1 = "2099d87709c5e064273925dbf2cf1fd081bf0262";
       
       };
   };

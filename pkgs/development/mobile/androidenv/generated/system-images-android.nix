@@ -12,8 +12,8 @@
       archives.all = fetchurl {
       
         url = 
-        https://dl.google.com/android/repository/sys-img/android/armv7-10_r04.zip;
-        sha1 = "54680383118eb5c95a11e1cc2a14aa572c86ee69";
+        https://dl.google.com/android/repository/sys-img/android/armeabi-v7a-10_r05.zip;
+        sha1 = "8537616a7add47cce24c60f18bc2429e3dc90ae3";
       
       };
   };
@@ -42,8 +42,8 @@
       archives.all = fetchurl {
       
         url = 
-        https://dl.google.com/android/repository/sys-img/android/armeabi-v7a-15_r04.zip;
-        sha1 = "363223bd62f5afc0b2bd760b54ce9d26b31eacf1";
+        https://dl.google.com/android/repository/sys-img/android/armeabi-v7a-15_r05.zip;
+        sha1 = "03d7ed95a9d3b107e3f2e5b166d017ea12529e70";
       
       };
   };
@@ -57,8 +57,8 @@
       archives.all = fetchurl {
       
         url = 
-        https://dl.google.com/android/repository/sys-img/android/sysimg_armv7a-16_r04.zip;
-        sha1 = "39c093ea755098f0ee79f607be7df9e54ba4943f";
+        https://dl.google.com/android/repository/sys-img/android/armeabi-v7a-16_r06.zip;
+        sha1 = "69b944b0d5a18c8563fa80d7d229af64890f724e";
       
       };
   };
@@ -72,8 +72,8 @@
       archives.all = fetchurl {
       
         url = 
-        https://dl.google.com/android/repository/sys-img/android/armeabi-v7a-17_r05.zip;
-        sha1 = "7460e8110f4a87f9644f1bdb5511a66872d50fd9";
+        https://dl.google.com/android/repository/sys-img/android/armeabi-v7a-17_r06.zip;
+        sha1 = "a18a3fd0958ec4ef52507f58e414fc5c7dfd59d6";
       
       };
   };
@@ -87,8 +87,8 @@
       archives.all = fetchurl {
       
         url = 
-        https://dl.google.com/android/repository/sys-img/android/armeabi-v7a-18_r04.zip;
-        sha1 = "0bf34ecf4ddd53f6b1b7fe7dfa12f2887c17e642";
+        https://dl.google.com/android/repository/sys-img/android/armeabi-v7a-18_r05.zip;
+        sha1 = "580b583720f7de671040d5917c8c9db0c7aa03fd";
       
       };
   };
@@ -222,8 +222,8 @@
       archives.all = fetchurl {
       
         url = 
-        https://dl.google.com/android/repository/sys-img/android/x86-10_r04.zip;
-        sha1 = "655ffc5cc89dd45a3aca154b254009016e473aeb";
+        https://dl.google.com/android/repository/sys-img/android/x86-10_r05.zip;
+        sha1 = "a166d5ccbb165e1dd5464fbfeec30a61f77790d8";
       
       };
   };
@@ -237,8 +237,8 @@
       archives.all = fetchurl {
       
         url = 
-        https://dl.google.com/android/repository/sys-img/android/x86-15_r04.zip;
-        sha1 = "e45c728b64881c0e86529a8f7ea9c103a3cd14c1";
+        https://dl.google.com/android/repository/sys-img/android/x86-15_r05.zip;
+        sha1 = "c387e0efed2cdc610e5944eea67b7b692d03760c";
       
       };
   };
@@ -282,8 +282,8 @@
       archives.all = fetchurl {
       
         url = 
-        https://dl.google.com/android/repository/sys-img/android/x86-18_r03.zip;
-        sha1 = "03a0cb23465c3de15215934a1dbc9715b56e9458";
+        https://dl.google.com/android/repository/sys-img/android/x86-18_r04.zip;
+        sha1 = "7a4ced4d9b0ab48047825491b4072dc2eb9b610e";
       
       };
   };
@@ -424,6 +424,40 @@
   };
   
 
+    "29".default."x86" = {
+      name = "system-image-29-default-x86";
+      path = "system-images/android-29/default/x86";
+      revision = "29-default-x86";
+      displayName = "Intel x86 Atom System Image";
+      archives.all = fetchurl {
+      
+        url = 
+        https://dl.google.com/android/repository/sys-img/android/x86-29_r07-windows.zip;
+        sha1 = "e0e6504734f601c28350528d39a4b17b3e0f82dc";
+      
+      };
+  };
+  
+
+    "29".default."x86" = {
+      name = "system-image-29-default-x86";
+      path = "system-images/android-29/default/x86";
+      revision = "29-default-x86";
+      displayName = "Intel x86 Atom System Image";
+      archives.all = fetchurl {
+      
+        url = 
+        https://dl.google.com/android/repository/sys-img/android/x86-29_r07-darwin.zip;
+        sha1 = "e0e6504734f601c28350528d39a4b17b3e0f82dc";
+      
+        url = 
+        https://dl.google.com/android/repository/sys-img/android/x86-29_r07-linux.zip;
+        sha1 = "e0e6504734f601c28350528d39a4b17b3e0f82dc";
+      
+      };
+  };
+  
+
     "21".default."x86_64" = {
       name = "system-image-21-default-x86_64";
       path = "system-images/android-21/default/x86_64";
@@ -539,6 +573,40 @@
         url = 
         https://dl.google.com/android/repository/sys-img/android/x86_64-28_r04.zip;
         sha1 = "d47a85c8f4e9fd57df97814ad8884eeb0f3a0ef0";
+      
+      };
+  };
+  
+
+    "29".default."x86_64" = {
+      name = "system-image-29-default-x86_64";
+      path = "system-images/android-29/default/x86_64";
+      revision = "29-default-x86_64";
+      displayName = "Intel x86 Atom_64 System Image";
+      archives.all = fetchurl {
+      
+        url = 
+        https://dl.google.com/android/repository/sys-img/android/x86_64-29_r07-windows.zip;
+        sha1 = "c8e307b885a68f71b4889a70bffea729fc4ecbfa";
+      
+      };
+  };
+  
+
+    "29".default."x86_64" = {
+      name = "system-image-29-default-x86_64";
+      path = "system-images/android-29/default/x86_64";
+      revision = "29-default-x86_64";
+      displayName = "Intel x86 Atom_64 System Image";
+      archives.all = fetchurl {
+      
+        url = 
+        https://dl.google.com/android/repository/sys-img/android/x86_64-29_r07-darwin.zip;
+        sha1 = "c8e307b885a68f71b4889a70bffea729fc4ecbfa";
+      
+        url = 
+        https://dl.google.com/android/repository/sys-img/android/x86_64-29_r07-linux.zip;
+        sha1 = "c8e307b885a68f71b4889a70bffea729fc4ecbfa";
       
       };
   };
